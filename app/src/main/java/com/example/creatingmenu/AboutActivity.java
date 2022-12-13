@@ -19,7 +19,7 @@ public class AboutActivity<view> extends AppCompatActivity {
         findViewById(R.id.btnHome).setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
-        });
+        });   
         linkedin = findViewById(R.id.btnLinkedin);
         facebook = findViewById(R.id.btnFB);
         insta = findViewById(R.id.btnInsta);
