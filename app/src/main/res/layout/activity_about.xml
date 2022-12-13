@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_about"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_name"
+        android:textColor="#1B1919"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="26dp"
+        android:text="This is a simple demo application to demo users about calculation Zakat based on value of gold."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/adib" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="5dp"
+        android:text="Adib Othman"
+        android:textColor="#1E1A1A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="10dp"
+        android:text="Developer"
+        android:textColor="#1B1818"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnInsta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="186dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="12dp"
+        android:text="Back To Home"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsta" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="228dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="71dp"
+        android:text="Copyright(c) 2022 Adib Othman"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        tools:text="@string/copyrigth" />
+
+    <ImageView
+        android:id="@+id/btnInsta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="-24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnLinkedin"
+        app:layout_constraintStart_toEndOf="@+id/btnFB"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/instagramlogo" />
+
+    <ImageView
+        android:id="@+id/btnLinkedin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="17dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInsta"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/btnFB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginBottom="17dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnInsta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/facebookllogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
